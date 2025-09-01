@@ -2,7 +2,8 @@ name: Deploy static site to Pages
 
 on:
  push:
- branches: [ "main" ] # <- no inline comments inside array
+   branches:
+     - main
  workflow_dispatch:
 
 permissions:
@@ -11,29 +12,24 @@ permissions:
  id-token: write
 
 concurrency:
- group: "pages"
+ group: pages
  cancel-in-progress: true
 
 jobs:
  build:
- runs-on: ubuntu-latest
- steps:
- - name: Checkout
- uses: actions/checkout@v4
-
- # Your site files are at the repo root (index.html, assets/)
- - name: Upload artifact
- uses: actions/upload-pages-artifact@v3
- with:
- path: "." # keep "." since index.html is in the root
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v4
+    - uses: actions/upload-pages-artifact@v3
+      with:
+        path: .
 
  deploy:
- needs: build
- runs-on: ubuntu-latest
- environment:
- name: github-pages
- url: ${{ steps.deployment.outputs.page_url }}
- steps:
- - name: Deploy to GitHub Pages
- id: deployment
- uses: actions/deploy-pages@v4
+  needs: build
+  runs-on: ubuntu-latest
+  environment:
+    name: github-pages
+    url: ${{ steps.deployment.outputs.page_url }}
+  steps:
+    - id: deployment
+      uses: actions/deploy-pages@v4
