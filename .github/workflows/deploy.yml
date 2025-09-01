@@ -2,7 +2,7 @@ name: Deploy static site to Pages
 
 on:
  push:
- branches: [ "main" ] # change to "master" if your default branch is master
+ branches: [ "main" ] 
  workflow_dispatch:
 
 permissions:
