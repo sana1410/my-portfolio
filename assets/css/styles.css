@@ -316,6 +316,8 @@ img {
   overflow: hidden;
 }
 .work__img img {
+  width: auto;
+  height: auto;
   transition: 1s;
 }
 .work__img img:hover {
