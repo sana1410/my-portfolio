@@ -1,193 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sana | Portfolio</title>
-  <!-- Google Fonts & Font Awesome Icons -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
+<!-- ==================== EXPERIENCE SECTION ==================== -->
+<section class="experience section" id="experience">
+  <h2 class="section-title">Work Experience</h2>
 
-  <!-- Navigation Bar -->
-  <header class="navbar">
-    <div class="nav-container">
-      <a href="#home" class="logo">Sana<span>.</span></a>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact" class="btn-nav">Contact</a></li>
-        </ul>
-      </nav>
+  <div class="experience__container bd-grid">
+
+    <!-- Experience 1 -->
+    <div class="experience__data">
+      <h3 class="experience__title">Data Scientist</h3>
+      <span class="experience__company">Cognizant Technology Services (Client: Waymo)</span>
+      <span class="experience__years">Nov 2025 – Present</span>[cite: 1]
+      <p class="experience__description">
+        Design mission-critical dashboards for operations leadership and manage a data testing framework focused on UI evaluation.[cite: 1]
+      </p>
     </div>
-  </header>
 
-  <main>
-    <!-- Hero Section with Photo -->
-    <section class="hero" id="home">
-      <div class="hero-container">
-        <div class="hero-profile-img">
-          <!-- Replace 'assets/images/profile.jpg' with your image path -->
-          <img src="assets/images/profile.jpg" alt="Sana Profile Picture">
-        </div>
-        <div class="hero-content">
-          <h1 class="hero-title">Hi, I'm <span class="highlight">Sana</span></h1>
-          <h2 class="hero-headline">
-            Data Scientist | Business Intelligence Developer | SQL | Python | MS Fabric
-          </h2>
-          <p class="hero-description">
-            Passionate about transforming complex datasets into actionable business insights, building scalable data pipelines, and implementing data-driven solutions.
-          </p>
-          <div class="hero-cta">
-            <a href="#projects" class="btn btn-primary">View Projects</a>
-            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Experience 2 -->
+    <div class="experience__data">
+      <h3 class="experience__title">Senior Data Analyst</h3>
+      <span class="experience__company">GreenLancer Energy Inc. | Detroit, MI, USA</span>
+      <span class="experience__years">Jan 2025 – Apr 2025</span>[cite: 3]
+      <ul class="experience__list">
+        <li>Designed and deployed end-to-end data architecture using MySQL and Power BI, improving sales analytics and ad hoc reporting efficiency by 40% across 3 regional business units.[cite: 3]</li>
+        <li>Built ETL pipelines within a medallion architecture, enhancing data quality and reliability for 5M+ sales records monthly.[cite: 3]</li>
+        <li>Delivered executive Power BI dashboards tracking KPIs such as CAC, retention, and LTV, directly influencing quarterly sales strategy and reducing customer acquisition costs by 15%.[cite: 3]</li>
+      </ul>
+    </div>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-      <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <p class="about-text">
-          I am a results-oriented Data Scientist and BI Developer with expertise in designing analytical frameworks, data modeling, and developing automated pipelines. I thrive on bridging the gap between technical data engineering and executive business decisions.
-        </p>
-      </div>
-    </section>
+    <!-- Experience 3 -->
+    <div class="experience__data">
+      <h3 class="experience__title">Lead Solution Advisor</h3>
+      <span class="experience__company">Deloitte | Gurgaon, India</span>
+      <span class="experience__years">Oct 2021 – Nov 2022</span>[cite: 3]
+      <ul class="experience__list">
+        <li>Led a cross-functional team of 5 analysts to develop end-to-end fraud detection and prevention models in SQL Server, integrating with Power BI dashboards that reduced audit turnaround time by 30% and improved compliance accuracy.[cite: 3]</li>
+        <li>Collaborated with risk and finance stakeholders to define key risk indicators (KRIs) and automate exception reporting, reducing manual oversight hours by 200+ per month.[cite: 3]</li>
+        <li>Designed and deployed a Python-based anomaly detection pipeline for invoice monitoring, improving audit traceability and cutting review time by 25%.[cite: 3]</li>
+      </ul>
+    </div>
 
-    <!-- Work Experience Section -->
-    <section class="experience" id="experience">
-      <div class="container">
-        <h2 class="section-title">Work Experience</h2>
-        
-        <div class="experience-container">
-          <!-- Present Experience Card -->
-          <div class="experience-card">
-            <div class="experience-header">
-              <h3 class="role">Data Scientist</h3>
-              <span class="duration">Nov 2025 – Present</span>
-            </div>
-            <h4 class="company">Cognizant Technology Services <span class="client">(Client: Waymo)</span></h4>
-            <ul class="experience-details">
-              <li>Developed scalable data models and analytical solutions to support business intelligence objectives.</li>
-              <li>Leveraged Python, SQL, and MS Fabric to process, transform, and analyze large-scale datasets.</li>
-              <li>Collaborated with cross-functional teams to build data pipelines and drive data-backed decision-making.</li>
-            </ul>
-          </div>
+    <!-- Experience 4 -->
+    <div class="experience__data">
+      <h3 class="experience__title">Data Engineer - IT Business Analytics</h3>
+      <span class="experience__company">Tata Power DDL | Delhi, India</span>
+      <span class="experience__years">Aug 2019 – Sep 2021</span>[cite: 3]
+      <ul class="experience__list">
+        <li>Migrated 10M+ smart meter data points into Azure Data Lake Gen2 using PySpark and Delta Lake, enabling predictive analysis that identified payment fraud patterns worth $3.5M annually.[cite: 3]</li>
+        <li>Developed automated ETL pipelines in Azure Data Factory, improving data reliability and lineage tracking for 25+ datasets used by analytics and operations teams.[cite: 3]</li>
+        <li>Designed Tableau dashboards with data-driven KPIs to highlight theft hotspots, showcasing applications in data visualization.[cite: 3]</li>
+      </ul>
+    </div>
 
-          <!-- Placeholder for Previous Experience -->
-          <div class="experience-card">
-            <div class="experience-header">
-              <h3 class="role">Previous Role Title</h3>
-              <span class="duration">MM YYYY – MM YYYY</span>
-            </div>
-            <h4 class="company">Company Name</h4>
-            <ul class="experience-details">
-              <li>Designed and optimized SQL queries and ETL pipelines for enterprise reporting.</li>
-              <li>Created interactive dashboards to monitor key business metrics and performance indicators.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Experience 5 -->
+    <div class="experience__data">
+      <h3 class="experience__title">Big Data Engineer - Supply Chain Management</h3>
+      <span class="experience__company">NCR Corporation | Gurgaon, India</span>
+      <span class="experience__years">May 2018 – Jul 2019</span>[cite: 3]
+      <ul class="experience__list">
+        <li>Developed Hive-based data repository/database to support high-performance querying and streamlined work processes.[cite: 3]</li>
+        <li>Implemented CDC (Change Data Capture) frameworks to support incremental data updates, reducing data latency by 75% and improving decision-making speed for business analysts and supply chain managers.[cite: 3]</li>
+      </ul>
+    </div>
 
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-      <div class="container">
-        <h2 class="section-title">Featured Projects</h2>
-        
-        <div class="projects-grid">
-          <!-- Project Card 1 -->
-          <div class="project-card">
-            <h3 class="project-title">Enterprise Analytics Dashboard</h3>
-            <p class="project-description">
-              Built an end-to-end business intelligence pipeline and dashboard to visualize key operational metrics and forecast performance trends.
-            </p>
-            <div class="project-tags">
-              <span>SQL</span>
-              <span>Python</span>
-              <span>MS Fabric</span>
-            </div>
-            <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
-          </div>
+    <!-- Experience 6 -->
+    <div class="experience__data">
+      <h3 class="experience__title">System Engineer</h3>
+      <span class="experience__company">Tata Consultancy Services | Bangalore, India</span>
+      <span class="experience__years">Sep 2014 – Aug 2017</span>[cite: 3]
+      <ul class="experience__list">
+        <li>Performed churn analysis integrating customer data, reporting tools, and conversion rates, improving retention by 20%.[cite: 3]</li>
+        <li>Migrated mainframe logic into Advanced SQL queries and ETL pipelines, optimizing workflows to report building solutions.[cite: 3]</li>
+      </ul>
+    </div>
 
-          <!-- Project Card 2 -->
-          <div class="project-card">
-            <h3 class="project-title">Automated Data Pipeline</h3>
-            <p class="project-description">
-              Engineered scalable data transformations to aggregate heterogeneous datasets into unified schemas for real-time reporting.
-            </p>
-            <div class="project-tags">
-              <span>Python</span>
-              <span>ETL</span>
-              <span>SQL</span>
-            </div>
-            <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-    </section>
+  </div>
+</section>
 
-    <!-- Education Section -->
-    <section class="education" id="education">
-      <div class="container">
-        <h2 class="section-title">Education</h2>
-        
-        <div class="education-container">
-          <div class="education-card">
-            <div class="education-header">
-              <h3 class="degree">Bachelor of Technology / Science in Computer Science / Data Science</h3>
-              <span class="duration">Graduation Year</span>
-            </div>
-            <h4 class="institution">University / College Name</h4>
-            <p class="education-details">Relevant Coursework: Data Structures, Database Systems, Machine Learning, Applied Statistics.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+<!-- ==================== EDUCATION SECTION ==================== -->
+<section class="education section" id="education">
+  <h2 class="section-title">Education</h2>
 
-    <!-- Skills Section -->
-    <section class="skills" id="skills">
-      <div class="container">
-        <h2 class="section-title">Skills & Expertise</h2>
-        <div class="skills-grid">
-          <div class="skill-tag">SQL</div>
-          <div class="skill-tag">Python</div>
-          <div class="skill-tag">MS Fabric</div>
-          <div class="skill-tag">Data Modeling</div>
-          <div class="skill-tag">Business Intelligence</div>
-          <div class="skill-tag">Data Pipelines</div>
-        </div>
-      </div>
-    </section>
+  <div class="education__container bd-grid">
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-      <div class="container text-center">
-        <h2 class="section-title">Let's Connect</h2>
-        <p>I am open to new opportunities and collaborations.</p>
-        <div class="social-links">
-          <a href="https://github.com/sana1410" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="mailto:your.email@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-        </div>
-      </div>
-    </section>
-  </main>
+    <div class="education__data">
+      <h3 class="education__degree">Master's of Professional Studies in Analytics</h3>[cite: 3]
+      <span class="education__school">Northeastern University | Boston, USA</span>[cite: 3]
+      <span class="education__years">Jan 2023 – Jun 2024</span>[cite: 3]
+      <p class="education__details">Coursework in data science, reporting, quantitative analyses, statistical programming, and predictive model development.</p>[cite: 3]
+    </div>
 
-  <footer>
-    <p>&copy; 2026 Sana. All rights reserved.</p>
-  </footer>
+    <div class="education__data">
+      <h3 class="education__degree">B.Tech in Electronics and Electrical Engineering</h3>[cite: 3]
+      <span class="education__school">KIIT University | Orissa, India</span>[cite: 3]
+      <span class="education__years">Sep 2010 – May 2014</span>[cite: 3]
+    </div>
 
-</body>
-</html>
+  </div>
+</section>
+
+<!-- ==================== PROJECTS SECTION ==================== -->
+<section class="projects section" id="projects">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="projects__container bd-grid">
+
+    <div class="project__card">
+      <h3 class="project__title">Revenue Cycle Management (RCM) Analytics</h3>[cite: 3]
+      <span class="project__subtitle">KGS Technology Group | May 2025 – Present</span>[cite: 3]
+      <p class="project__description">
+        Built an RCM analytics solution integrating Claims, EMR, and CPT data in SQL Server for scalable pipeline automation.[cite: 3]
+        Developed Power BI dashboards visualizing KPIs like denial rate, A/R days, clean claim rate, and payer mix, enabling real-time financial insights.[cite: 3]
+        Delivered HIPAA-compliant data governance ensuring full traceability across ingestion.[cite: 3]
+      </p>
+      <a href="#" class="project__link" target="_blank" rel="noopener noreferrer">View Project Link</a>[cite: 3]
+    </div>
+
+  </div>
+</section>
