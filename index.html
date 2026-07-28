@@ -1,343 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sana | Portfolio</title>
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">Sana<span>.</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact" class="btn-nav">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <main>
+    <!-- Hero / Headline Section -->
+    <section class="hero" id="home">
+      <div class="hero-container">
+        <h1 class="hero-title">Hi, I'm <span class="highlight">Sana</span></h1>
+        <h2 class="hero-headline">
+          Data Scientist | Business Intelligence Developer | SQL | Python | MS Fabric
+        </h2>
+        <p class="hero-description">
+          Passionate about transforming complex datasets into actionable business insights, building scalable data pipelines, and implementing data-driven solutions.
+        </p>
+        <div class="hero-cta">
+          <a href="#experience" class="btn btn-primary">View Experience</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+    </section>
 
-        <title>Portfolio website complete</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Marlon</a>
-                </div>
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="about-text">
+          I am a results-oriented Data Scientist and BI Developer with expertise in designing analytical frameworks, data modeling, and developing automated pipelines. I thrive on bridging the gap between technical data engineering and executive business decisions.
+        </p>
+      </div>
+    </section>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#Education" class="nav__link">Education</a></li>
-						
-                    </ul>
-					
-                </div>
+    <!-- Work Experience Section -->
+    <section class="experience" id="experience">
+      <div class="container">
+        <h2 class="section-title">Work Experience</h2>
+        
+        <div class="experience-container">
+          <!-- Cognizant Card -->
+          <div class="experience-card">
+            <div class="experience-header">
+              <h3 class="role">Data Scientist</h3>
+              <span class="duration">Nov 2025 – Present</span>
+            </div>
+            <h4 class="company">Cognizant Technology Services <span class="client">(Client: Waymo)</span></h4>
+            <ul class="experience-details">
+              <li>Developed scalable data models and analytical solutions to support business intelligence objectives.</li>
+              <li>Leveraged Python, SQL, and MS Fabric to process, transform, and analyze large-scale datasets.</li>
+              <li>Collaborated with cross-functional teams to build data pipelines and drive data-backed decision-making.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="skills-grid">
+          <div class="skill-tag">SQL</div>
+          <div class="skill-tag">Python</div>
+          <div class="skill-tag">MS Fabric</div>
+          <div class="skill-tag">Data Modeling</div>
+          <div class="skill-tag">Business Intelligence</div>
+          <div class="skill-tag">Data Pipelines</div>
+        </div>
+      </div>
+    </section>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Sana</span><br> Data Analyst </h1>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container text-center">
+        <h2 class="section-title">Let's Connect</h2>
+        <p>I am open to new opportunities and collaborations.</p>
+        <div class="social-links">
+          <a href="https://github.com/sana1410" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:your.email@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-                    <a href="https://docs.google.com/document/d/1LzDfrc2MMPm3ybH4pKaliVzjBYz6C3_qZaq0W6Veg_Q/edit?usp=sharing" class="button">Download CV</a>
-                </div>
+  <footer>
+    <p>&copy; 2026 Sana. All rights reserved.</p>
+  </footer>
 
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/sana-yasin14101992/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="mailto:sana.yasin14@gmail.com" class="home__social-icon"><i class='bx bx-envelope' ></i></a>
-                    <a href="https://sana1410.github.io/sana1410/" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="assets/img/about.png"/>
-                        </g>
-                    </svg>
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.png" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I'am Sana</h2>
-                        <p class="about__text">I am a results-driven data analytics and business intelligence professional with 8+ years of experience transforming complex data into actionable insights across energy, healthcare, consulting, and technology sectors. Skilled in SQL, Python, Power BI, Tableau, and modern data engineering tools (Azure, Databricks, Snowflake), I specialize in building scalable pipelines, designing data models, and delivering executive dashboards that drive operational efficiency and growth. With proven success in revenue cycle management, compliance reporting, and customer success analytics, I thrive at the intersection of data, strategy, and impact—helping organizations make smarter, faster, and more informed decisions.</p>           
-                    </div>                                   
-                </div>
-            </section>
-
-            <!--===== SKILLS 
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
-                    </div>
-                </div>
-            </section>=====-->
-			<section class="skills section" id="skills">
-			  <h2 class="section-title">Skills</h2>
-
-			  <div class="skills__container bd-grid">          
-				<div>
-				  <h2 class="skills__subtitle">Professional Skills</h2>
-				  <p class="skills__text">Data analytics professional with expertise in BI solutions, data engineering, visualization, and machine learning tools.</p>
-
-				  <div class="skills__data">
-					<div class="skills__names">
-					  <i class='bx bx-code-alt skills__icon'></i>
-					  <span class="skills__name">Python, R, SQL, PySpark, SparkSQL</span>
-					</div>
-					<div class="skills__bar skills__python"></div>
-					<div><span class="skills__percentage">90%</span></div>
-				  </div>
-
-				  <div class="skills__data">
-					<div class="skills__names">
-					  <i class='bx bx-bar-chart-alt-2 skills__icon'></i>
-					  <span class="skills__name">Power BI, Tableau, Google Data Studio, Retool, Excel</span>
-					</div>
-					<div class="skills__bar skills__viz"></div>
-					<div><span class="skills__percentage">95%</span></div>
-				  </div>
-
-				  <div class="skills__data">
-					<div class="skills__names">
-					  <i class='bx bx-git-branch skills__icon'></i>
-					  <span class="skills__name">Azure Data Factory, Databricks, Snowflake, Hive, AWS, DBT, Airflow, Git</span>
-					</div>
-					<div class="skills__bar skills__dataeng"></div>
-					<div><span class="skills__percentage">85%</span></div>
-				  </div>
-
-				  <div class="skills__data">
-					<div class="skills__names">
-					  <i class='bx bx-brain skills__icon'></i>
-					  <span class="skills__name">Machine Learning: Scikit-learn, XGBoost, NLP (NLTK, spaCy), Matplotlib, Seaborn, Plotly</span>
-					</div>
-					<div class="skills__bar skills__ml"></div>
-					<div><span class="skills__percentage">80%</span></div>
-				  </div>
-
-				  <div class="skills__data">
-					<div class="skills__names">
-					  <i class='bx bx-trending-up skills__icon'></i>
-					  <span class="skills__name">Statistics & Modeling: Hypothesis Testing, A/B Testing, Regression, Clustering, Feature Engineering</span>
-					</div>
-					<div class="skills__bar skills__stats"></div>
-					<div><span class="skills__percentage">85%</span></div>
-				  </div>
-				</div>
-
-				<div>              
-				  <img src="assets/img/work5.jpg" alt="" class="skills__img">
-				</div>
-			  </div>
-			</section>
-
-
-
-            <!--===== CONTACT 
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Enviar" class="contact__button button">
-                    </form>
-                </div>
-            </section>
-        </main>=====-->
-			<!--===== Work experience======---->
-			<section class="work section" id="work">
-			  <h2 class="section-title">Work Experience</h2>
-
-			  <div class="work__container bd-grid">
-
-				<!-- GreenLancer -->
-				<div class="work__data">
-				  <h3 class="work__title"><i class='bx bx-briefcase'></i> Sr. BI Analyst</h3>
-				  <span class="work__company">GreenLancer Energy Inc. • Detroit, MI • Jan 2025 – Apr 2025</span>
-				</div>
-
-				<!-- Deloitte -->
-				<div class="work__data">
-				  <h3 class="work__title"><i class='bx bx-briefcase'></i> Lead Solution Advisor</h3>
-				  <span class="work__company">Deloitte Risk & Financial Advisory • Gurgaon, India • Oct 2021 – Nov 2022</span>
-				</div>
-
-				<!-- Tata Power -->
-				<div class="work__data">
-				  <h3 class="work__title"><i class='bx bx-briefcase'></i> Data Analyst – IT Business Analytics</h3>
-				  <span class="work__company">Tata Power Delhi Distribution Ltd. • Delhi, India • Aug 2019 – Sep 2021</span>
-				</div>
-
-				<!-- NCR -->
-				<div class="work__data">
-				  <h3 class="work__title"><i class='bx bx-briefcase'></i> Big Data Engineer – Supply Chain Analytics</h3>
-				  <span class="work__company">NCR Corporation • Gurgaon, India • May 2018 – Jul 2019</span>
-				</div>
-
-				<!-- TCS -->
-				<div class="work__data">
-				  <h3 class="work__title"><i class='bx bx-briefcase'></i> System Engineer</h3>
-				  <span class="work__company">Tata Consultancy Services • Bangalore, India • Sep 2014 – Aug 2017</span>
-				</div>
-
-			  </div>
-			</section>
-
-
-        <!--===== FOOTER =====-->
-			<!--===== Education ======-->
-			<section class="Education section" id="Education">
-			  <h2 class="section-title">Education</h2>
-
-			  <div class="education__container bd-grid">
-
-				<!-- Northeastern University -->
-				<div class="education_date">
-				  <h3 class="edu__title"><i class='bx bx-graduation skills__icon'></i> Master of Professional Studies in Analytics</h3>
-				  <span class="edu__school">Northeastern University • Boston,MA • Jan 2023 – Jun 2024</span>
-				</div>
-
-				<!-- KIIT University -->
-				<div class="education_date">
-				  <h3 class="edu__title"><i class='bx bx-graduation skills__icon'></i> B.Tech in Electronics and Electrical Engineering</h3>
-				  <span class="edu__school">KIIT University • Orissa,India• Sep 2010 – May 2014</span>
-				</div>
-
-
-			  </div>
-			</section>
-			<!--===== Projects =====-->
-            <section class="project section" id="Projects">
-                <h2 class="section-title">Work</h2>
-
-                <div class="work__container bd-grid">
-                    <a href="https://github.com/sana1410/ALY6980-Capstone" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </a>
-                    <a href="https://github.com/sana1410/Omdena-Local-challenges" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </a>
-                    <a href="https://github.com/sana1410/RCM" class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                    </a>
-                    <!--===<a href="" class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </a>====--->
-                </div>
-            </section>
-			
-			<!--===== Project Presentation ======-->
-			<section class="presentation section" id="presentation">
-			  <h2 class="section-title">Project Presentation</h2>
-
-			  <div class="presentation__container bd-grid">
-				<div class="presentation__data">
-				  <i class='bx bxs-file-ppt presentation__icon'></i>
-				  <h3 class="presentation__title">My Dashbaords and Visuals </h3>
-				  <p class="presentation__desc">
-					This presentation highlights work sample or dashboards or infographics created by me .
-				  </p>
-				  <a href="assets/presentation/Visualisations.pptx" download class="button">
-					<i class='bx bx-download'></i> Download PPT
-				  </a>
-				  <a href="https://docs.google.com/presentation/d/1JlXo7aYdQ-MwyksH5ZWyMiVNtixIQBED36g6clYn2yE/edit?slide=id.p1#slide=id.p1" target="_blank" class="button">
-					<i class='bx bx-show'></i> View Online
-				  </a>
-				</div>
-			  </div>
-			</section>
-
-					
-
-
-
-
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+</body>
 </html>
